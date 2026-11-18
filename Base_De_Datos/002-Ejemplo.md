@@ -7,11 +7,12 @@
 | mail          |
 | observaciones |
 ```sql 
-CREATE TABLE (
-id_contacto SMALLINT UNSIGNED, 
-nombre VARCHAR (200),
-telefono CHAR (9),
-mail VARCHAR (200),
-observacionES VARCHAR (500),
-);
+CREATE TABLE contacto (
+id_contacto SMALLINT UNSIGNED PRIMARY KEY, 
+nombre VARCHAR (25) NOT NULL,
+apellido VARCHAR (25) NOT NULL,
+telefono CHAR (9) NOT NULL,
+mail VARCHAR (320) NOT NULL,
+observaciones VARCHAR (500) NOT NULL
+)ENGINE=InnoDB;
 ```
